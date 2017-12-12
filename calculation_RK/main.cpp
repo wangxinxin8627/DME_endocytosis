@@ -476,7 +476,7 @@ void output(double t, int i_figure){
 	int digit_decimal = current_L_x_10 - digit_1 * 10;
 	//digit_1 = 6, digit_decimal = 5;
 	n_char = sprintf(str3, "%.6g", float(digit_1));
-	strcpy(str1, "membrane\\shape\\");
+	strcpy(str1, "membrane//shape//");
 	strcat(str1, str3);
 	strcat(str1, ".");
 	n_char = sprintf(str3, "%.6g", float(digit_decimal));
@@ -584,7 +584,7 @@ int main() {
 				cin.get();
 			}
 			n_char = sprintf(str3, "%.6g", float(digit_1));
-			strcpy(str1, "membrane\\parameter\\");
+			strcpy(str1, "membrane//parameter//");
 			strcat(str1, str3);
 			strcat(str1, ".");
 			n_char = sprintf(str3, "%.6g", float(digit_decimal));
@@ -624,7 +624,7 @@ int main() {
 			int n_shape = 10 * digit_1 + digit_decimal;
 			//-----------------------------------------------------
 			n_char = sprintf(str3, "%.6g", float(digit_1));
-			strcpy(str1, "membrane\\nuc_br_in\\br_");
+			strcpy(str1, "membrane//nuc_br_in//br_");
 			if (digit_1 > 0)
 			strcat(str1, str3);
 			n_char = sprintf(str3, "%.6g", float(digit_decimal));
@@ -641,7 +641,7 @@ int main() {
 			infile.close();
 			//-----------------------------------------------------
 			n_char = sprintf(str3, "%.6g", float(digit_1));
-			strcpy(str1, "membrane\\nuc_br_in\\nuc_");
+			strcpy(str1, "membrane//nuc_br_in//nuc_");
 			if (digit_1 > 0)
 				strcat(str1, str3);
 			n_char = sprintf(str3, "%.6g", float(digit_decimal));
@@ -658,7 +658,7 @@ int main() {
 			infile.close();
 			//-----------------------------------------------------
 			n_char = sprintf(str3, "%.6g", float(digit_1));
-			strcpy(str1, "membrane\\nuc_br_in\\in_");
+			strcpy(str1, "membrane//nuc_br_in//in_");
 			if (digit_1 > 0)
 				strcat(str1, str3);
 			n_char = sprintf(str3, "%.6g", float(digit_decimal));
